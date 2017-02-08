@@ -1,0 +1,12 @@
+.login-box {
+    max-width: 360px;
+    margin: 0 auto;
+    margin-top: 9%;
+    padding: 20px;
+    background-color: #ddd;
+    text-align: center;
+}
+
+.login-box h3 {
+    margin-top: 0px;
+}

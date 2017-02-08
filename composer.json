@@ -1,0 +1,18 @@
+{
+    "name": "benjamin-chen/laravel-admin-package",
+    "require": {
+        "php": ">=5.4.0",
+        "laravel/framework": "^5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "BenjaminChen\\Admin\\": "src"
+        }
+    },
+    "license": "MIT",
+    "authors": [{
+        "name": "benjamin",
+        "email": "benjaminchen.c@gmail.com"
+    }],
+    "minimum-stability": "stable"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "admin",
+  "version": "1.0.0",
+  "description": "## Composer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/laravelpackage/admin.git"
+  },
+  "author": "benjamin",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/laravelpackage/admin#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-header": "^1.8.8",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.11"
+  }
+}

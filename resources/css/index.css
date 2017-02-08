@@ -1,0 +1,7 @@
+.index-title {
+    float: right;
+    margin-right: calc(50% - 175px);
+    margin-top: 30vh;
+    font-size: 50px;
+    color: gray
+}

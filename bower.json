@@ -1,0 +1,23 @@
+{
+  "name": "admin",
+  "description": "## Composer",
+  "main": "index.js",
+  "authors": [
+    "benjamin"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.7",
+    "jquery": "~3.1.1",
+    "bootstrap-fileinput": "^4.3.6",
+    "summernote": "^0.8.2"
+  }
+}
