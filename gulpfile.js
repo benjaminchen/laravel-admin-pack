@@ -23,7 +23,7 @@ gulp.task('scripts', function() {
         .pipe(header('/*! <%= pkg.name %> <%= pkg.version %> */\n', { pkg: pkg })) // banner with version and name of package
         .pipe(gulp.dest('./public/js/')) // save file to destination directory
         .on('end', function() {
-            exec('cp public/js/admin-pack.min.js ../../../public/vendor/adminPack/js/', (error, stdout, stderr) => {
+            exec('cp public/js/admin-pack.min.js ../../public/vendor/adminPack/js/', (error, stdout, stderr) => {
                 if (error) {
                     console.error(`exec error: ${error}`);
                     return;
@@ -48,7 +48,7 @@ gulp.task('styles', function() {
         .pipe(header('/*! <%= pkg.name %> <%= pkg.version %> */\n', { pkg: pkg })) // making banner with version and name of package
         .pipe(gulp.dest('./public/css/')) // saving file myproject.min.css to this directory
         .on('end', function() {
-            exec('cp public/css/admin-pack.min.css ../../../public/vendor/adminPack/css/', (error, stdout, stderr) => {
+            exec('cp public/css/admin-pack.min.css ../../public/vendor/adminPack/css/', (error, stdout, stderr) => {
                 if (error) {
                     console.error(`exec error: ${error}`);
                     return;

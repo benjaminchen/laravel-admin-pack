@@ -1,8 +1,10 @@
-$('.sidebar-menu>li').each(function() {
+$('.sidebar-menu>li').each(function(index) {
     var me = $(this);
-    var a = me.children('a');
-    if (a.attr('href') == '/admin') return;
-    if (window.location.pathname.includes(a.attr('href'), 0)) {
+    var wPath = window.location.pathname;
+    var aPath = me.children('a')[0].pathname;
+    if (index == 0 && wPath.slice(-5) == 'admin') {
+        me.addClass('active');
+    } else if (index != 0 && wPath.includes(aPath, 0)) {
         me.addClass('active');
     }
 });
