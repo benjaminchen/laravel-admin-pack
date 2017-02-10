@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-lg-2 col-md-2 logo">
-        <a href="/admin">
+        <a href="{{ URL::to("admin") }}">
             <span><b>{{ trans('adminPack::admin.my_admin') }}</b></span>
         </a>
     </div>
@@ -15,10 +15,10 @@
                 <span>{{ $currentUser->name }}</span>
                 <div class="header-option">
                     <div class="pull-left">
-                        <a href="/admin/manager/{{ $currentUser->id }}/edit" class="btn btn-default btn-flat">{{ trans('adminPack::admin.setting') }}</a>
+                        <a href="{{ URL::to("admin/manager/".$currentUser->id."/edit") }}" class="btn btn-default btn-flat">{{ trans('adminPack::admin.setting') }}</a>
                     </div>
                     <div class="pull-right">
-                        <a href="/admin/logout" class="btn btn-default btn-flat">{{ trans('adminPack::admin.logout') }}</a>
+                        <a href="{{ URL::to("admin/logout") }}" class="btn btn-default btn-flat">{{ trans('adminPack::admin.logout') }}</a>
                     </div>
                 </div>
             </div>

@@ -8,7 +8,7 @@
     @include('adminPack::components.message')
 
     <div class="btn-group pull-right" style="margin-right: 10px">
-        <a class="btn btn-sm btn-default" href="/admin/manager/create"><i class="fa fa-save"></i>&nbsp;{{ trans('adminPack::admin.new') }}</a>
+        <a class="btn btn-sm btn-default" href="{{ URL::to("admin/manager/create") }}"><i class="fa fa-save"></i>&nbsp;{{ trans('adminPack::admin.new') }}</a>
     </div>
 
     <table class="table">
@@ -29,7 +29,7 @@
                 <td>{{ $admin->name }}</td>
                 <td>{{ $admin->role }}</td>
                 <td>
-                    <a href="/admin/manager/{{ $admin->getKey() }}/edit">
+                    <a href="{{ URL::to("admin/manager/".$admin->getKey()."/edit") }}">
                         <i class="fa fa-edit"></i>
                     </a>
                     <a href="javascript:void(0);" data-key="{{ $admin->getKey() }}" data-token="{{ csrf_token() }}" class="model-row-delete">

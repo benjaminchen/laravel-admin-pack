@@ -7,10 +7,10 @@
     @include('adminPack::components.error')
 
     <div class="btn-group pull-right" style="margin-right: 10px">
-        <a class="btn btn-sm btn-default" href="/admin/{{ $model }}"><i class="fa fa-arrow-left"></i>&nbsp;{{ trans('adminPack::admin.back') }}</a>
+        <a class="btn btn-sm btn-default" href="{{ URL::to("admin/$model") }}"><i class="fa fa-arrow-left"></i>&nbsp;{{ trans('adminPack::admin.back') }}</a>
     </div>
 
-    <form action="/admin/{{ $model }}" method="post" enctype="multipart/form-data">
+    <form action="{{ URL::to("admin/$model") }}" method="post" enctype="multipart/form-data">
         {{ csrf_field() }}
         @foreach(BHelper::arraySafeGet($columns, 'file', []) as $column => $attributes)
             <div class="form-group">

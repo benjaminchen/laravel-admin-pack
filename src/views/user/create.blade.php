@@ -7,10 +7,10 @@
     @include('adminPack::components.error')
 
     <div class="btn-group pull-right" style="margin-right: 10px">
-        <a class="btn btn-sm btn-default" href="/admin/manager"><i class="fa fa-arrow-left"></i>&nbsp;{{ trans('adminPack::admin.back') }}</a>
+        <a class="btn btn-sm btn-default" href="{{ URL::to("admin/manager") }}"><i class="fa fa-arrow-left"></i>&nbsp;{{ trans('adminPack::admin.back') }}</a>
     </div>
 
-    <form action="/admin/manager" method="post" enctype="multipart/form-data">
+    <form action="{{ URL::to("admin/manager") }}" method="post" enctype="multipart/form-data">
         {{ csrf_field() }}
         <div class="form-group">
             <label for="username">{{ trans('adminPack::admin.username') }}</label>

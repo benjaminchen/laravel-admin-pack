@@ -10,7 +10,7 @@
         @include('adminPack::components.error')
         <div class="login-box">
             <h3>{{ trans('adminPack::admin.admin_login') }}</h3>
-            <form action="/admin/login" method="post">
+            <form action="{{ URL::to("admin/login") }}" method="post">
                 {{ csrf_field() }}
                 <div class="form-group has-feedback 1">
                     <input type="input" class="form-control" placeholder="{{ trans('adminPack::admin.username') }}" name="username" value="{{ old('username') }}">
