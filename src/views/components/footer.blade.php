@@ -4,7 +4,7 @@
             <strong>{{ trans('adminPack::admin.version') }}</strong>&nbsp;&nbsp; 1.0
         </div>
         <strong>Powered by 
-            <a href="#" target="_blank">Laravel-admin-package</a>
+            <a href="https://github.com/benjaminchen/laravel-admin-pack" target="_blank">Laravel-admin-package</a>
         </strong>
     </div>
 </div>
